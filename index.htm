@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Paul V. Chiu</title>
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.headertext {
+			color:#000099;
+			text-decoration: underline;
+		}
+		.center {
+    			display: block;
+   			 margin-left: auto;
+    			margin-right: auto;
+    			width: 50%;
+		}
+		.left-aligned {
+			margin: auto;
+			width: 50%;
+			align: left;
+			padding-left:20px;
+		}
+		.paddingspace {
+			padding-left:50px;
+			padding-bottom:30px;
+		}
+		.linespaced {
+			line-height: 1.6;
+		}
+		.timeperiod {
+			font-size:20px;
+			font-style:italic;
+		}
+		/* https://stackoverflow.com/questions/32039846/can-i-use-css-to-add-a-bullet-point-to-any-element */
+		.bullet {
+  			display: list-item;          /* This has to be "list-item"                                               */
+    			list-style-type: disc;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+    			list-style-position: inside; /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position */
+		}
+		.squarebullet {
+			display: list-item;          /* This has to be "list-item"                                               */
+    			list-style-type: square;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+    			list-style-position: inside; /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position */
+		}
+		#profilepic {
+			height: 198px;
+			width: 215px;
+		}
+		.headerinfotext {
+			font-size: 250%;
+			list-style-type: none;
+    			margin-top: 30px;
+   			padding: 0;
+			color:white;
+			text-shadow: 0px 0px 5px #000000;
+			padding-left:20px
+		}
+		.introparagraph {
+			margin-top: 90px;
+		}
+		.academics {
+			background-color:#F5F5F5;
+			border:2px solid grey;
+		}
+		#UBCsmalltext {
+			font-size:1.17em;
+			font-style:italic;
+		}
+		.experiences {
+			margin: auto;
+		}	
+		.selectedexperiences {
+			background-color:#F5F5F5;
+			border:2px solid grey;
+		}
+		.circleimage {
+			border-radius:50%; 
+			border:3px solid black;
+		}
+		.otherexperiences {
+			background-color:#F5F5F5;
+			border:2px solid grey;
+		}
+		.otherexperiencesh1 {
+			font-size:1.5em;
+		}
+		.otherexperiencesh2 {
+			font-size:1.17em;
+		}
+		.otherexperiencestimeperiod {
+			font-size:1em;
+			font-style:italic;
+		}
+		.otherexperiencescircleimage {
+			border-radius:50%; 
+			border:2px solid black;
+			width:105px; 
+			height:100px;
+		}
+		.thankyou {
+			color: 	#000099;
+			text-align: center;
+		}
+		/*I took clearfix (the next lines) from https://stackoverflow.com/questions/11438910/how-to-display-items-side-by-side-without-using-tables */
+		/* tell the container's children to float left: */
+			.float-my-children > * {
+    			float:left;
+    			margin-right:5px;
+			}
+			/* this is called a clearfix. it makes sure that the container's children floats are cleared, without using extra markup */
+			.clearfix {
+    			*zoom:1 /* for IE */
+			}
+			.clearfix:before,
+			.clearfix:after {
+   				content: " ";
+   				 display: table;
+			}
+			.clearfix:after {
+   				clear: both;
+			}
+		/* end clearfix*/
+		/* navbar stuff I took from w3schools */
+		#navbar_ul {
+			list-style-type: none;
+   			margin: 0;
+   			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+		.navbar_li {
+			float: left;
+			border-right: 1px solid #bbb;
+		}
+		.navbar_a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		.navbar_a:hover {
+			background-color: #111;
+		}
+		
+		.cover {
+			background-size: cover;
+			background-image: url('/images/seattle.JPG');
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div id="Back_to_Top"></div>
+	<ul id="navbar_ul">
+		<li class="navbar_li"><a href="#Back_to_Top" class="navbar_a">Back to top</a></li>
+		<li class="navbar_li"><a href="#Academic_Experience" class="navbar_a">Academic Experience</a></li>
+		<li class="navbar_li"><a href="#Selected_Experiences" class="navbar_a">Selected Experiences</a></li>
+		<li class="navbar_li"><a href="#Other_Experiences" class="navbar_a">Other Experiences</a></li>
+	</ul>
+<br><br>
+	<div class="clearfix float-my-children center cover">
+   		<img src="/images/linkedinpic1.PNG" style="width:212px; height:214px; border-radius:50%">
+  		<p class= "headerinfotext"><strong>Paul V. Chiu</strong> <br> <span style="font-size: 70%">Honours BSc. Biology, UBC </span><br> <span style="font-size: 60%">paulvchiu@gmail.com</span></p>		 
+        </div>
+	<div class="left-aligned linespaced introparagraph">
+		<p> Hi! I am a prospective Master’s student on his way to studying biodiversity conservation. Having loved birds (especially owls) ever since I was a child, I initially wished to examine avian behaviour. However, after volunteering at the Stanley Park Ecology Society (the stewards of a popular local park), I was inspired to undertake a career in conservation. Now, I aim to study the effects of urbanization and other human disturbances on animal behaviour and ecology.</p>
+		<p> If you’re interested in talking with me about conservation, birds, or anything else, you can definitely <a href="mailto:paulvchiu@gmail.com?Subject=Hello!" target="_top">shoot me an email</a> or <a href="https://www.linkedin.com/in/paul-chiu-94ba36a1/">connect with me on LinkedIn</a>. If you want to know more about the Stanley Park Ecology Society and a few of my other experiences, keep on scrolling. </p>
+	</div>
+
+	<div class="academics paddingspace">
+		<h1 class="headertext" id="Academic_Experience">Academic Experience</h1>
+		<div class="UBC">
+			<h2>Honours Bachelor of Science, Biology (Animal Biology option)
+			<br><span style="font-style:italic;">University of British Columbia, Vancouver, Canada</span></h2> 
+			<h3 class="timeperiod">September 2013 - July 2017 (degree conferred May 2017)</h3>
+			<div class="clearfix float-my-children">
+   				<img src="/images/ubclogo.jpg" class="circleimage" style="height:200px;width:210px">
+				<p class="left-aligned" style="margin-top:0.5%;"><span class="bullet">Attained Dean’s List status during my third and fourth years. </span>
+				<br><span class="bullet">Honours Thesis: An Analysis of Avian Population Trends in Metro Vancouver’s Stanley Park (download pdf)</span>
+				<br><span class="squarebullet linespaced" style="margin-left:50px;">Abstract: Stanley Park is a haven for birdwatchers. As many as 236 species have appeared in the park over the years even with its proximity to an urbanized area thanks to its location along the heavily-trafficked Pacific Flyway. With the biodiversity prevalent in the park as well as its importance for local tourism, the Stanley Park Ecology Society (SPES) monitors the population of flora and fauna in Stanley Park and uses this data to guide their efforts in maintaining the park’s biodiversity. Past research has indicated that avian species that are more habituated to disturbances may be able to increase in abundance. I performed a comprehensive analysis on the avian populations of Stanley Park using data collected from four sites (Beaver Lake, Lost Lagoon, Devonian Park, and the Seawall) by the SPES. My results indicated that the general avian populations at all four sites were experiencing temporal trends in abundance and richness but not diversity (quantified by the Simpson’s Index of Diversity), that disturbance-adapted birds did not always experience stability or increasing abundance (although their richnesses were mostly stable), and that the birds less adapted to disturbances did not always experience decreasing abundance. In fact, the birds that are less adapted were usually stable in abundance and also richness. However, these results may not represent the true avian population of Stanley Park due to the methodology. Future surveys should include another study site based entirely inside a forested area and should also be conducted at a higher frequency. Future analyses should also be objective as I determined temporal trends mostly by eye.</span></p>
+				
+			</div>
+		</div>
+	</div>
+<br>
+	<div class="experiences">
+		<div class="selectedexperiences paddingspace"> 
+			<h1 class="headertext" id="Selected_Experiences">Selected Experiences</h1>
+			<h2>Stanley Park Ecology Society - Vancouver, Canada - Volunteer, Ecology/Conservation</h2>
+			<h3 class="timeperiod">October 2016 - Present</h3>
+			<div class="clearfix float-my-children">
+				<img src="/images/SPES%20logo.jpg" class="circleimage">
+				<p class="left-aligned linespaced">The Stanley Park Ecology Society (SPES) is the non-profit organization treated as the de facto stewards of the flora and fauna of Vancouver’s world-famous Stanley Park. Upon the completion of my Honours thesis for which I collaborated with SPES, I was invited back to volunteer with them. There, I was allowed to help out with surveys, compile and analyze data, and even write reports. Some of that tasks that I were given are listed below:
+				<br><span class="bullet">(download pptx) <strong>Breakfast with the Birds presentation</strong>: I presented on the topic of my Honours thesis to several of SPES’ donors at the Breakfast with the Birds -- an event where donors were given a special presentation on how their donations had been utilized and later taken on a short birdwatching walk in the Park.</span>
+				<span class="bullet">(download xlsx) <strong>Stanley Park Lifelist</strong>: I updated the lifelist of Stanley Park -- a list of all species ever recorded by SPES to be in the Park.</span>
+				<span class="bullet">(download pdf) <strong>Bird population analyses</strong>: I compiled survey data on Stanley Park’s bird populations at two sites in the Park -- Beaver Lake and Lost Lagoon.</span>
+				<span class="bullet">(download pdf) <strong>The State of Ecological Integrity in Stanley Park</strong>:  Building up on my analyses on the Park’s bird populations, I authored the sections pertaining to birds in the second edition of this report. <em>Coming soon!</em></span></p>
+			</div>
+			<br>
+			<h2>Richmond Animal Protection Society - Richmond, Canada - Volunteer, Animal Shelter</h2>
+			<h3 class="timeperiod">January 2015 - Present</h3>
+			<div class="clearfix float-my-children">
+   				<img src="/images/raps%20logo%20resized.jpg" class="circleimage" style="width:210px; height:200px">
+  				<p class= "left-aligned linespaced" style="margin-top:1%">The Regional Animal Protection Society (RAPS) runs North America’s cat sanctuary and the animal shelter of Richmond, Canada -- my hometown. Volunteering at the latter, I interacted with cats in order to entertain them while also maintaining their cages (e.g. refill water, clean rooms) and other general tasks at the shelter (e.g. snow-shovelling, cleaning). Doing so allowed me to develop more skills and familiarity with handling cats and animals in general.</p>  
+			</div>
+			<br>
+			<h2>Orphaned Wildlife Rehabilitation Society - Delta, Canada - Volunteer, Raptor Rehabilitation</h2>
+			<h3 class="timeperiod">October 2010 - June 2013</h3>
+			<div class="clearfix float-my-children">
+   				<img src="/images/owllogo.jpg" class="circleimage" style="width:210px; height:200px">
+  				<p class= "left-aligned linespaced" style="margin-top:1%">The Orphaned Wildlife Rehabilitation Society (OWL) is a rehabilitation centre that takes in sick and injured birds of prey from the surrounding cities. They also organize programs that bring raptors (who are already acclimated to humans) to various schools and events in order to educate the public on these birds. It was at one of these school presentations where my love for owls (and eventually other birds) was stoked, subsequently leading to my volunteering at OWL. There, I helped feed the raptors and other general tasks (e.g. laundry). Additionally, I was able to learn more about them while also becoming more comfortable with actual wild animals.</p>  
+			</div>
+		</div>
+<br>
+		<div class="otherexperiences paddingspace"> 
+			<h1 class="otherexperiencesh1 headertext" id="Other_Experiences">Other Experiences</h1>
+			<h2 class="otherexperiencesh2">Cambie Animal Hospital - Vancouver, Canada - Volunteer, Veterinary</h2>
+			<h3 class="otherexperiencestimeperiod">October 2016 - November 2017</h3>
+			<div class="clearfix float-my-children">
+   				<img src="/images/mojo%20resized.jpg" class="otherexperiencescircleimage">
+				<p class="left-aligned"><span class="bullet">Provided non-vital assistance (e.g. animal handling, dog walking) to staff under their direction.</span>
+				<br><span class="bullet">Observed staff performing surgical procedures.</span>
+				<br><span class="bullet">Developed skills and familiarity with handling common pets, such as dogs, cats, and ferrets.</span></p>
+			</div>
+			<h2 class="otherexperiencesh2">DC Lab, School of Biomedical Sciences, University of Hong Kong - Hong Kong, Hong Kong - Work, Student Lab Helper</h2>
+			<h3 class="otherexperiencestimeperiod">June 2015 - July 2015</h3>
+			<div class="clearfix float-my-children">
+   				<img src="/images/hkulogo.PNG" class="otherexperiencescircleimage">
+				<p class="left-aligned" style="margin-top:1%;"><span class="bullet">Assisted researchers in investigating intervertebral disc degeneration in a mouse model.</span>
+				<br><span class="bullet">Developed strong skills in staining, PCR, slide mounting, and other laboratory techniques.</span></p>
+			</div>
+			<h2 class="otherexperiencesh2">Iona Island Bird Observatory (WildResearch) - Richmond, Canada - Volunteer, Bird Banding</h2>
+			<h3 class="otherexperiencestimeperiod">Three eight-hour sessions between August 2016 and September 2016</h3>
+			<div class="clearfix float-my-children">
+   				<img src=/images/wildresearchlogo.jpg" class="otherexperiencescircleimage">
+				<p class="left-aligned" style="margin-top:0.5%;"><span class="bullet">Assisted with and participated in mist netting and banding migratory birds to collect valuable data on migratory populations.</span>
+				<br><span class="bullet">Developed skills in mist netting, bird banding, and identification of migratory species.</span></p>
+			</div>
+		</div>
+	</div>
+<h1 class="thankyou">Thank you for your time!</h1>
+</body>
+</html>
