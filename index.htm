@@ -3,6 +3,7 @@
 
 <head>
 	<title>Paul V. Chiu</title>
+	
 	<style>
 		html, body {
 			margin: 0;
@@ -11,9 +12,9 @@
 		body {
 			font-family: Arial, Helvetica, sans-serif;
 		}
-		.headertext {
-			color:#000099;
-			text-decoration: underline;
+		.academics {
+			background-color:#F5F5F5;
+			border:2px solid grey;
 		}
 		.center {
     			display: block;
@@ -21,22 +22,73 @@
     			margin-right: auto;
     			width: 50%;
 		}
+		.circleimagebig {
+			border-radius:50%; 
+			border:3px solid black;
+			height:150px;
+			width:157.5px;
+		}
+		.circleimagesmall {
+			border-radius:50%; 
+			border:2px solid black;
+			width:105px; 
+			height:100px;
+		}
+		.cover {
+			background-size: cover;
+			background-image: url('/images/rockwaterfall.jpg');
+		}
+		.headerinfotext {
+			font-size: 250%;
+			list-style-type: none;
+    			margin-top: 30px;
+   			padding: 0;
+			color:white;
+			text-shadow: 0px 0px 5px #000000;
+			padding-left:20px
+		}
+		.headertext {
+			color:#000099;
+			text-decoration: underline;
+		}
 		.left-aligned {
 			margin: auto;
 			width: 50%;
 			align: left;
 			padding-left:20px;
 		}
+		.linespaced {
+			line-height: 1.6;
+		}
+		.otherexperiences {
+			background-color:#F5F5F5;
+			border:2px solid grey;
+		}
 		.paddingspace {
 			padding-left:50px;
 			padding-bottom:30px;
 		}
-		.linespaced {
-			line-height: 1.6;
+		.sameline {
+			display:inline;
 		}
-		.timeperiod {
-			font-size:20px;
-			font-style:italic;
+		.selectedexperiences {
+			background-color:#F5F5F5;
+			border:2px solid grey;
+		}
+		.subtitle {
+			font-weight:normal;
+		}
+		.text {
+			width:50%;
+			margin-left:1%;
+		}
+		#profilepic {
+			height: 198px;
+			width: 215px;
+		}
+		#thankyou {
+			color: 	#000099;
+			text-align: center;
 		}
 		/* https://stackoverflow.com/questions/32039846/can-i-use-css-to-add-a-bullet-point-to-any-element */
 		.bullet {
@@ -48,66 +100,7 @@
 			display: list-item;          /* This has to be "list-item"                                               */
     			list-style-type: square;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
     			list-style-position: inside; /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position */
-		}
-		#profilepic {
-			height: 198px;
-			width: 215px;
-		}
-		.headerinfotext {
-			font-size: 250%;
-			list-style-type: none;
-    			margin-top: 30px;
-   			padding: 0;
-			color:white;
-			text-shadow: 0px 0px 5px #000000;
-			padding-left:20px
-		}
-		.cover {
-			background-size: cover;
-			background-image: url('/images/rockwaterfall.jpg');
-		}
-		.academics {
-			background-color:#F5F5F5;
-			border:2px solid grey;
-		}
-		#UBCsmalltext {
-			font-size:1.17em;
-			font-style:italic;
-		}
-		.experiences {
-			margin: auto;
-		}	
-		.selectedexperiences {
-			background-color:#F5F5F5;
-			border:2px solid grey;
-		}
-		.circleimage {
-			border-radius:50%; 
-			border:3px solid black;
-		}
-		.otherexperiences {
-			background-color:#F5F5F5;
-			border:2px solid grey;
-		}
-		.otherexperiencesh1 {
-			font-size:1.5em;
-		}
-		.otherexperiencesh2 {
-			font-size:1.17em;
-		}
-		.otherexperiencestimeperiod {
-			font-size:1em;
-			font-style:italic;
-		}
-		.otherexperiencescircleimage {
-			border-radius:50%; 
-			border:2px solid black;
-			width:105px; 
-			height:100px;
-		}
-		.thankyou {
-			color: 	#000099;
-			text-align: center;
+			margin-left:9%;
 		}
 		/*I took clearfix (the next lines) from https://stackoverflow.com/questions/11438910/how-to-display-items-side-by-side-without-using-tables */
 		/* tell the container's children to float left: */
@@ -152,10 +145,7 @@
 		}
 		.navbar_a:hover {
 			background-color: #111;
-		}
-		
-		
-		
+		}		
 	</style>
 </head>
 
@@ -176,93 +166,129 @@
 		<p> Hi! I am a prospective Master’s student on his way to studying biodiversity conservation. Having loved birds (especially owls) ever since I was a child, I initially wished to examine avian behaviour. However, after volunteering at the Stanley Park Ecology Society (the stewards of a popular local park), I was inspired to undertake a career in conservation. Now, I aim to study the effects of urbanization and other human disturbances on animal behaviour and ecology.</p>
 		<p> If you’re interested in talking with me about conservation, birds, or anything else, you can definitely <a href="mailto:paulvchiu@gmail.com?Subject=Hello!" target="_top">shoot me an email</a> or <a href="https://www.linkedin.com/in/paul-chiu-94ba36a1/">connect with me on LinkedIn</a>. If you want to know more about the Stanley Park Ecology Society and a few of my other experiences, keep on scrolling. </p>
 	</div>
+
 	<div class="academics paddingspace">
 		<h1 class="headertext" id="Academic_Experience">Academic Experience</h1>
-		<div class="UBC">
-			<h2>Honours Bachelor of Science, Biology (Animal Biology option)
-			<br><span style="font-style:italic;">University of British Columbia, Vancouver, Canada</span></h2> 
-			<h3 class="timeperiod">September 2013 - July 2017 (degree conferred May 2017)</h3>
 			<div class="clearfix float-my-children">
-   				<img src="/images/ubclogo.jpg" class="circleimage" style="height:200px;width:210px">
-				<p class="left-aligned" style="margin-top:0.5%;"><span class="bullet">Attained Dean’s List status during my third and fourth years. </span>
-				<br><span class="bullet">Honours Thesis: An Analysis of Avian Population Trends in Metro Vancouver’s Stanley Park <a href="/documents/Paul%20Chiu%20%20Honours%20Thesis.pdf">(download pdf)</a></span>
-				<br><span class="squarebullet linespaced" style="margin-left:50px;">Abstract: Stanley Park is a haven for birdwatchers. As many as 236 species have appeared in the park over the years even with its proximity to an urbanized area thanks to its location along the heavily-trafficked Pacific Flyway. With the biodiversity prevalent in the park as well as its importance for local tourism, the Stanley Park Ecology Society (SPES) monitors the population of flora and fauna in Stanley Park and uses this data to guide their efforts in maintaining the park’s biodiversity. Past research has indicated that avian species that are more habituated to disturbances may be able to increase in abundance. I performed a comprehensive analysis on the avian populations of Stanley Park using data collected from four sites (Beaver Lake, Lost Lagoon, Devonian Park, and the Seawall) by the SPES. My results indicated that the general avian populations at all four sites were experiencing temporal trends in abundance and richness but not diversity (quantified by the Simpson’s Index of Diversity), that disturbance-adapted birds did not always experience stability or increasing abundance (although their richnesses were mostly stable), and that the birds less adapted to disturbances did not always experience decreasing abundance. In fact, the birds that are less adapted were usually stable in abundance and also richness. However, these results may not represent the true avian population of Stanley Park due to the methodology. Future surveys should include another study site based entirely inside a forested area and should also be conducted at a higher frequency. Future analyses should also be objective as I determined temporal trends mostly by eye.</span></p>
-				
+   				<img src="/images/ubclogo.jpg" class="circleimagebig">		
+				<div>
+				<h2>Honours Bachelor of Science, Biology (Animal Biology option)</h2>
+				<h3 class="subtitle">University of British Columbia, Vancouver, Canada</h3> 
+				<h3 class="subtitle">September 2013 - July 2017 (degree conferred May 2017)</h3>
+				</div>
 			</div>
-		</div>
+			<p class="left-aligned">
+				<div class="text">
+					<p>Obtained Dean's List status during my third and fourth years.</p>
+      					<h4>Honours Thesis: An Analysis of Avian Population Trends in Metro Vancouver’s Stanley Park <a href="/documents/Paul%20Chiu%20%20Honours%20Thesis.pdf">(download pdf)</a></h4>
+      					<p>
+						<span class="bullet">Thanks to its location along the migration-heavy, highly-trafficked Pacific Flyway, Stanley Park is able to remain a biodiverse haven for bird watchers even with its proximity to the urbanized downtown region of Vancouver.</span>
+						<span class="bullet">To better protect such a biodiverse population (of both flora and fauna), Stanley Park Ecology Society (SPES) has established a variety of monitoring programs. Past results has suggested that avian species that are more habituated to disturbances (e.g. off-trail biking, recreational watercrafts) may increase in abundance, while the less-habituated would become less prevalent.</span>
+						<span class="bullet">To examine this, I performed an analysis on the avian population of the Park using  data from four sites - Beaver Lake, Lost Lagoon, Devonian Park, and the Seawall - collected by SPES between 2001 and 2002 and between 2005 and 2016.</span>
+						<span class="bullet">My results indicated that, during the examined period,  the general population of all sites had experienced temporal trends in abundance and richness but not diversity (quantified by the Simpson’s Index of Diversity), that disturbance-adapted birds did not always experience stability or increasing abundance (although their richnesses were mostly stable), and that the birds less adapted to disturbances did not always experience decreasing abundance. In fact, the birds that are less adapted were usually stable in abundance and richness.</span>
+						<span class="bullet">However, these results may not represent the true avian population of the Park due to the methodology. Future surveys should include another study site based entirely inside a forested area and should also be conducted at a higher frequency and with a consistent methodology.</span>
+					</p>		
+    				</div>
+			</p>
 	</div>
 <br>
+
 	<div class="experiences">
 		<div class="selectedexperiences paddingspace"> 
 			<h1 class="headertext" id="Selected_Experiences">Selected Experiences</h1>
-			<h2>Stanley Park Ecology Society - Vancouver, Canada - Volunteer, Ecology/Conservation</h2>
-			<h3 class="timeperiod">October 2016 - Present</h3>
 			<div class="clearfix float-my-children">
-				<img src="/images/SPES%20logo.jpg" class="circleimage">
-				<p class="left-aligned linespaced">The Stanley Park Ecology Society (SPES) is the non-profit organization treated as the de facto stewards of the flora and fauna of Vancouver’s world-famous Stanley Park. Upon the completion of my Honours thesis for which I collaborated with SPES, I was invited back to volunteer with them. There, I was allowed to help out with surveys, compile and analyze data, and even write reports. Some of that tasks that I were given are listed below:
-				<br><span class="bullet"><a href="/documents/Paul%20Chiu%20Breakfast%20with%20the%20Birds.pptx">(download pptx)</a> <strong>Breakfast with the Birds presentation</strong>: I presented on the topic of my Honours thesis to several of SPES’ donors at the Breakfast with the Birds -- an event where donors were given a special presentation on how their donations had been utilized and later taken on a short birdwatching walk in the Park.</span>
-				<span class="bullet">(download xlsx) <strong>Stanley Park Lifelist</strong>: I updated the lifelist of Stanley Park -- a list of all species ever recorded by SPES to be in the Park. <em>Coming soon!</em></span>
-				<span class="bullet">(download pdf) <strong>Bird population analyses</strong>: I compiled survey data on Stanley Park’s bird populations at two sites in the Park -- Beaver Lake and Lost Lagoon.</span> <em>Coming soon!</em>
-				<span class="bullet">(download pdf) <strong>The State of Ecological Integrity in Stanley Park</strong>:  Building up on my analyses on the Park’s bird populations, I authored the sections pertaining to birds in the second edition of this report. <em>Coming soon!</em></span></p>
+   				<img src="/images/SPES%20logo.jpg" class="circleimagebig">		
+				<div>
+				<h2>Stanley Park Ecology Society</h2>
+				<h3 class="subtitle">Vancouver, Canada - Volunteer, Ecology/Conservation</h3> 
+				<h3 class="subtitle">October 2016 - Present</h3>
+				</div>
 			</div>
-			<br>
-			<h2>Richmond Animal Protection Society - Richmond, Canada - Volunteer, Animal Shelter</h2>
-			<h3 class="timeperiod">January 2015 - Present</h3>
+			<p class="left-aligned">
+				<div class="text">
+      					<p>The Stanley Park Ecology Society (SPES) is the non-profit organization treated as the de facto stewards of the flora and fauna of Vancouver’s world-famous Stanley Park. Upon the completion of my Honours thesis for which I collaborated with SPES, I was invited back to volunteer with them. There, I was allowed to help out with surveys, compile and analyze data, and even write reports. Here a few highlights from my time there:</p>
+					<span class="bullet"><a href="/documents/Paul_Chiu_Breakfast_with_Birds.pptx" target="_blank">(download pptx)</a> <strong>Breakfast with the Birds presentation</strong>: I presented on the topic of my Honours thesis to several of SPES’ donors at the Breakfast with the Birds - an event where donors were given a special presentation on how their donations had been utilized and later taken on a short birdwatching walk in the Park.</span>
+					<span class="bullet"><a href="/documents/Stanley_Park_Updated_Lifelist.xlsx" target="_blank">(download xlsx)</a> <strong>Stanley Park Lifelist</strong>: I updated the lifelist of Stanley Park - a list of all species ever recorded by SPES to be in the Park.</span>
+					<span class="bullet"><a href="/documents/2018_bird_update_Paul_Chiu_sample.docx" target="_blank">(download docx sample)</a> <strong>Bird Data Analysis</strong>: I compiled survey data on Stanley Park’s bird populations at two sites in the Park - Beaver Lake and Lost Lagoon - and examined them for trends. Let me know if you would like more info on what I did and I'll definitely get back to you.</span>
+					<span class="bullet">(download pdf) <strong>The State of Ecological Integrity in Stanley Park Report</strong>: Building up on my analyses on the Park’s bird populations, I authored the sections pertaining to birds in the second edition of this report. <i>Coming soon!</i></span>
+    				</div>
+			</p>
 			<div class="clearfix float-my-children">
-   				<img src="/images/raps%20logo%20resized.jpg" class="circleimage" style="width:210px; height:200px">
-  				<p class= "left-aligned linespaced" style="margin-top:1%">The Regional Animal Protection Society (RAPS) runs North America’s cat sanctuary and the animal shelter of Richmond, Canada -- my hometown. Volunteering at the latter, I interacted with cats in order to entertain them while also maintaining their cages (e.g. refill water, clean rooms) and other general tasks at the shelter (e.g. snow-shovelling, cleaning). Doing so allowed me to develop more skills and familiarity with handling cats and animals in general.</p>  
+   				<img src="/images/raps%20logo%20resized.jpg" class="circleimagebig">		
+				<div>
+				<h2>Regional Animal Protection Society</h2>
+				<h3 class="subtitle">Richmond, Canada - Volunteer, Animal Shelter</h3> 
+				<h3 class="subtitle">January 2015 - June 2018</h3>
+				</div>
 			</div>
-			<br>
-			<h2>Orphaned Wildlife Rehabilitation Society - Delta, Canada - Volunteer, Raptor Rehabilitation</h2>
-			<h3 class="timeperiod">October 2010 - June 2013</h3>
+			<p class="left-aligned">
+				<div class="text">
+      					<p>The Regional Animal Protection Society (RAPS) runs North America’s largest cat sanctuary as well as the animal shelter of my hometown - Richmond, Canada. Volunteering at the latter, I interacted with cats in order to entertain them while also maintaining their cages (e.g. refill water, clean rooms) and other general tasks at the shelter (e.g. snow-shovelling, cleaning). Doing so allowed me to develop more skills and familiarity with handling cats and animals in general.</p>
+    				</div>
+			</p>
 			<div class="clearfix float-my-children">
-   				<img src="/images/owllogo.jpg" class="circleimage" style="width:210px; height:200px">
-  				<p class= "left-aligned linespaced" style="margin-top:1%">The Orphaned Wildlife Rehabilitation Society (OWL) is a rehabilitation centre that takes in sick and injured birds of prey from the surrounding cities. They also organize programs that bring raptors (who are already acclimated to humans) to various schools and events in order to educate the public on these birds. It was at one of these school presentations where my love for owls (and eventually other birds) was stoked, subsequently leading to my volunteering at OWL. There, I helped feed the raptors and other general tasks (e.g. laundry). Additionally, I was able to learn more about them while also becoming more comfortable with actual wild animals.</p>  
+   				<img src="/images/owllogo.jpg" class="circleimagebig">		
+				<div>
+				<h2>Orphaned Wildlife Rehabilitation Society</h2>
+				<h3 class="subtitle">Delta, Canada - Volunteer, Raptor Rehabilitation</h3> 
+				<h3 class="subtitle">October 2010 - June 2013</h3>
+				</div>
 			</div>
+			<p class="left-aligned">
+				<div class="text">
+      					<p>The Orphaned Wildlife Rehabilitation Society (OWL) is a rehabilitation centre that takes in sick and injured birds of prey from the surrounding cities. They also organize programs that bring raptors (who are already acclimated to humans) to various schools and events in order to educate the public on these birds. It was at one of these school presentations where my love for owls (and eventually other birds) was stoked, subsequently leading to my volunteering at OWL. There, I helped feed the raptors and other general tasks (e.g. laundry). Additionally, I was able to learn more about them while also becoming more comfortable with actual wild animals.</p>
+    				</div>
+			</p>
 		</div>
 <br>
+
 		<div class="otherexperiences paddingspace"> 
-			<h1 class="otherexperiencesh1 headertext" id="Other_Experiences">Other Experiences</h1>
-			<h2 class="otherexperiencesh2">Cambie Animal Hospital - Vancouver, Canada - Volunteer, Veterinary</h2>
-			<h3 class="otherexperiencestimeperiod">October 2016 - November 2017</h3>
+			<h2 class="headertext" id="Other_Experiences">Other Experiences</h2>
+			<h3 class = "sameline">Cambie Animal Hospital</h3>
+			<h3 class="sameline subtitle">| Vancouver, Canada - Volunteer, Veterinary Office</h3>
+			<h3 class="sameline subtitle">| October 2016 - November 2017</h3>
 			<div class="clearfix float-my-children">
-   				<img src="/images/mojo%20resized.jpg" class="otherexperiencescircleimage">
-				<p class="left-aligned"><span class="bullet">Provided non-vital assistance (e.g. animal handling, dog walking) to staff under their direction.</span>
+   				<img src="/images/mojo%20resized.jpg" class="circleimagesmall">
+				<p class="left-aligned" style="margin-top:0.5%"S><span class="bullet">Provided non-vital assistance (e.g. animal handling, dog walking) to staff under their direction.</span>
 				<br><span class="bullet">Observed staff performing surgical procedures.</span>
 				<br><span class="bullet">Developed skills and familiarity with handling common pets, such as dogs, cats, and ferrets.</span></p>
 			</div>
-			<h2 class="otherexperiencesh2">DC Lab, School of Biomedical Sciences, University of Hong Kong - Hong Kong, Hong Kong - Work, Student Lab Helper</h2>
-			<h3 class="otherexperiencestimeperiod">June 2015 - July 2015</h3>
+			<h3 class="sameline">DC Lab, School of Biomedical Sciences, University of Hong Kong</h3>
+			<h3 class="sameline subtitle">| Hong Kong, Hong Kong - Work, Student Lab Helper</h3>
+			<h3 class="sameline subtitle">| June 2015 - July 2015</h3>
 			<div class="clearfix float-my-children">
-   				<img src="/images/hkulogo.PNG" class="otherexperiencescircleimage">
-				<p class="left-aligned" style="margin-top:1%;"><span class="bullet">Assisted researchers in investigating intervertebral disc degeneration in a mouse model.</span>
+   				<img src="/images/hkulogo.PNG" class="circleimagesmall">
+				<p class="left-aligned" style="margin-top:0.5%;"><span class="bullet">Assisted researchers in investigating intervertebral disc degeneration in a mouse model.</span>
 				<br><span class="bullet">Developed strong skills in staining, PCR, slide mounting, and other laboratory techniques.</span></p>
 			</div>
-			<h2 class="otherexperiencesh2">Iona Island Bird Observatory (WildResearch) - Richmond, Canada - Volunteer, Bird Banding</h2>
-			<h3 class="otherexperiencestimeperiod">Three eight-hour sessions between August 2016 and September 2016</h3>
+			<h3 class="sameline">Iona Island Bird Observatory (WildResearch)</h3>
+			<h3 class="sameline subtitle">| Richmond, Canada - Volunteer, Bird Banding</h2>
+			<h3 class="sameline subtitle">| Three eight-hour sessions between August 2016 and September 2016</h3>
 			<div class="clearfix float-my-children">
-   				<img src="/images/wildresearchlogo.jpg" class="otherexperiencescircleimage">
+   				<img src="/images/wildresearchlogo.jpg" class="circleimagesmall">
 				<p class="left-aligned" style="margin-top:0.5%;"><span class="bullet">Assisted with and participated in mist netting and banding migratory birds to collect valuable data on migratory populations.</span>
 				<br><span class="bullet">Developed skills in mist netting, bird banding, and identification of migratory species.</span></p>
 			</div>
-			<h2 class="otherexperiencesh2">Payless ShoeSource - Richmond, Canada - Work, Sales Associate</h2>
-			<h3 class="otherexperiencestimeperiod">March 2018 - Present</h3>
+			<h3 class="sameline">Payless ShoeSource</h3>
+			<h3 class="sameline subtitle">| Richmond, Canada - Work, Sales Associate</h3>
+			<h3 class="sameline subtitle">| March 2018 - June 2018</h3>
 			<div class="clearfix float-my-children">
-   				<img src="/images/payless.jpg" class="otherexperiencescircleimage">
+   				<img src="/images/payless.jpg" class="circleimagesmall">
 				<p class="left-aligned" style="margin-top:0.5%;"><span class="bullet">Developed skills in holding positive interactions with customers.</span>
 				<br><span class="bullet">Completed tasks (e.g. finding stock, price-checking) efficiently while under time pressure from busy shoppers.</span></p>
 			</div>
-			<h2 class="otherexperiencesh2">VancouFur 2018 (convention) - Richmond, Canada - Volunteer, Ranger</h2>
-			<h3 class="otherexperiencestimeperiod">March 10-11, 2018</h3>
+			<h3 class="sameline">VancouFur 2018 (convention)</h3>
+			<h3 class="sameline subtitle">| Richmond, Canada - Volunteer, Ranger</h3>
+			<h3 class="sameline subtitle">| March 10-11, 2018</h3>
 			<div class="clearfix float-my-children">
-   				<img src="/images/vancoufur.jpg" class="otherexperiencescircleimage">
-				<p class="left-aligned" style="margin-top:-0.5%;"><span class="bullet">Checked that visitors had required tickets before entering areas of the convention.</span>
+   				<img src="/images/vancoufur.jpg" class="circleimagesmall">
+				<p class="left-aligned" style="margin-top:0.5%;"><span class="bullet">Checked that visitors had required tickets before entering areas of the convention.</span>
 				<br><span class="bullet">Patrolled through convention grounds in order to ensure the safety of all animals and their handlers.</span>
 				<br><span class="bullet">Fulfilled the needs of any vendor or visitor requiring assistance.</span>
 				<br><span class="bullet">Socialized with handlers and their furry friends and made sure they came away with positive experiences of the convention.</span></p>
 			</div>
 		</div>
 	</div>
-<h1 class="thankyou">Thank you for your time!</h1>
+<h1 id="thankyou">Thank you for your time!</h1>
 </body>
 </html>
