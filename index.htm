@@ -14,7 +14,8 @@
 		}
 		.academics {
 			background-color:#F5F5F5;
-			border:2px solid grey;
+			border-top:2px solid grey;
+			border-bottom:2px solid grey;
 		}
 		.accent {
 			color:#1e90ff;
@@ -24,10 +25,10 @@
 			font-weight:bold;
 		}
 		.center {
-    			display: block;
+			display: block;
    			 margin-left: auto;
-    			margin-right: auto;
-    			width: 50%;
+			margin-right: auto;
+			width: 50%;
 		}
 		.circleimagebig {
 			border-radius:50%; 
@@ -69,11 +70,16 @@
 		}
 		.more_about_me {
 			background-color:#F5F5F5;
-			border:2px solid grey;
+			border-top:2px solid grey;
+			border-bottom:2px solid grey;
 		}
 		.otherexperiences {
 			background-color:#F5F5F5;
-			border:2px solid grey;
+			border-top:2px solid grey;
+			border-bottom:2px solid grey;
+		}
+		.othervolunteerexperiences {
+			line-height:50%;
 		}
 		.paddingspace {
 			padding-left:50px;
@@ -84,7 +90,8 @@
 		}
 		.selectedexperiences {
 			background-color:#F5F5F5;
-			border:2px solid grey;
+			border-top:2px solid grey;
+			border-bottom:2px solid grey;
 		}
 		.selectedpadding {
 			margin:0;
@@ -222,26 +229,26 @@
 	<ul id="navbar_ul">
 		<li class="navbar_li"><a href="#Back_to_Top" class="navbar_a">Back to top</a></li>
 		<li class="navbar_li"><a href="#Academic_Experience" class="navbar_a">Academic Experience</a></li>
-		<li class="navbar_li"><a href="#Selected_Experiences" class="navbar_a">Selected Experiences</a></li>
-		<li class="navbar_li"><a href="#Other_Experiences" class="navbar_a">Other Experiences</a></li>
+		<li class="navbar_li"><a href="#Volunteering_Experience" class="navbar_a">Volunteering Experience</a></li>
+		<li class="navbar_li"><a href="#Work_Experience" class="navbar_a">Work Experience</a></li>
 		<li class="navbar_li"><a href="#More_About_Me" class="navbar_a">More About Me</a></li>
 	</ul>
 <br><br><br><br>
 <!-- PROFILE -->
 	<div class="clearfix float-my-children center cover">
-   		<img src="/images/linkedinpic1.PNG" style="width:212px; height:214px; border-radius:50%; padding-left:3px;padding-top:3px">
+   		<img src="/images/linkedinpic1.PNG" style="width:212px; height:214px; border-radius:50%; padding-left:3px;padding-top:3px" title="Hi!!!" alt="it's me">
   		<p class= "headerinfotext"><strong>Paul V. Chiu</strong> <br> <span style="font-size: 70%">Honours BSc. Biology</span> <br> <span style="font-size: 60%">Richmond, Canada</span> <br> <span style="font-size: 60%">paulvchiu@gmail.com</span></p>		 
 	</div>
 	<div class="left-aligned linespaced">
-		<p> Hi! I am a <span class = "bolded">Masters of Conservation Science student</span> at the University of Queensland. Having loved birds (especially owls) ever since I was a child, I initially wished to examine avian behaviour. However, after volunteering at the <span class = "bolded">Stanley Park Ecology Society</span> (the stewards of a popular local park), I was inspired to undertake a career in conservation. Now, I want to give back to the community by working in <span class = "bolded">conservation education</span> and/or in a <span class = "bolded">citizen science</span> position. While I already have handy <span class = "bolded">data analysis</span> (including knowledge of <span class = "bolded">R</span>) and <span class = "bolded">communication skills</span>, I am <span class = "bolded">always interested in improving</span> my abilities to develop my career even further.</p>
-		<p> If you’re interested in talking with me about conservation, birds, or anything else, you can definitely <a href="mailto:paulvchiu@gmail.com?Subject=Hello!" target="_top">shoot me an email</a> or <a href="https://www.linkedin.com/in/paul-chiu-94ba36a1/">connect with me on LinkedIn</a>. If you want to know more about the Stanley Park Ecology Society and a few of my other experiences, keep on scrolling. </p>
+		<p>Hi! I am a <span class = "bolded">Masters of Conservation Biology graduate student</span> at the University of Queensland. Having loved birds (especially owls) ever since I was a kid, I initially wished to examine avian behaviour. As such, during my bachelor’s degree, I focused my <span class = "bolded">education on ecological research and animal psychology along with the associated statistical analysis skills</span>. After graduating, I volunteered with the stewards of the local Stanley Park — Stanley Park Ecology Society — where my <span class = "bolded">work assisted with bird conservation and management in one of Canada’s most-visited protected site</span>. Seeing the direct effect I had on helping preserve the Park’s biodiversity, I was inspired to undertake a career in conservation and headed all the way from Canada to the University of Queensland. Now, I want to give back to the community by <span class = "bolded">working in conservation education and/or in a citizen science position</span>, especially with the society's focus on these topics. While I already have handy <span class = "bolded">data analysis (including knowledge of R) and communication skills</span>, I am <span class = "bolded">always interested in improving my abilities</span> to develop my career even further.</p>
+		<p > If you’re interested in talking with me about conservation, birds, or anything else, you can definitely <a href="mailto:paulvchiu@gmail.com?Subject=Hello!" target="_top">shoot me an email</a> or <a href="https://www.linkedin.com/in/paul-chiu-94ba36a1/">connect with me on LinkedIn</a>. If you want to know more about the Stanley Park Ecology Society and a few of my other experiences, <span id="Academic_Experience">keep on scrolling.</span></p>
 	</div>
 <!-- EDUCATION -->
 	<div class="academics paddingspace">
-		<h1 class="headertext" id="Academic_Experience">Academic Experience</h1>
+		<h1 class="headertext">Academic Experience</h1>
 		<!-- UQ -->
 		<div class="clearfix float-my-children">
-			<img src="/images/uqlogo.jpg" class="circleimagebig">		
+			<img src="/images/uqlogo.jpg" class="circleimagebig" alt="UQ!">		
 			<div>
 				<h2 class = "bolded">Master of Conservation Science</h2>
 				<h3 class="subtitle">University of Queensland || Brisbane, Queensland</h3> 
@@ -254,11 +261,12 @@
 					<span class="bullet">Dean’s Commendation for Academic Excellence (2018): Obtained a 6.6+ GPA during my first semester.</span>
 					<span class="bullet">Thesis: TBD</span>
 					<!-- SELECTED COURSEWORK AND SKILLS OBTAINED -->
-					<span class="bullet">Skills Obtained/Selected Coursework:</span>
-					<span class="squarebullet">CONS7029/CONS6009: <span class = "accent">Analyzing complex conservation issues</span> and <span class = "accent">discussing them</span> with an unfamiliar audience (e.g. government officials)</span>
-					<span class="squarebullet">CONS7008: <span class = "accent">Statistically analyzing data</span> and <span class = "accent">programming in R</span>.</span>
-					<span class="squarebullet">GEOM7005: <span class = "accent">Utilizing ArcGIS</span> for mapping and land-use suitability analysis purposes.</span>
-					<span class="squarebullet">CONS7025: <span class = "accent">Creating consultancy reports</span> for <span class = "accent">concisely communicating</span> conservation issues.</span>
+					<span class="bullet">Demonstrated Skills:</span>
+					<span class="squarebullet">Statistically analyzing data with RStudio and Microsoft Excel.</span>
+					<span class="squarebullet">Designing statistically powerful ecological studies.</span>
+					<span class="squarebullet">Creating consultancy reports for concisely communicating conservation issues.</span>
+					<span class="squarebullet">Utilizing ArcGIS for mapping and land-use suitability analysis purposes.</span>
+					<span class="squarebullet">Researching government policies and actions (on local, national, and international scales) in order to evaluate and/or to recommend new management plans.</span>
 					<!-- SELECTED ASSIGNMENTS -->
 					<span class="bullet">Selected Assignments:</span>
 					<span class="squarebullet">CONS7025: The Power of Regrowth - An Assessment of the Conservation Values of Camphor Laurel Regrowth Versus Intact Native Rainforests <a href="/documents/CONS7025_Report_Paul_Chiu_45082388.pdf">(DOWNLOAD PDF)</a></span>
@@ -269,7 +277,7 @@
 		</p>
 		<!-- UBC -->
 		<div class="clearfix float-my-children">
-			<img src="/images/ubclogo.jpg" class="circleimagebig">		
+			<img src="/images/ubclogo.jpg" class="circleimagebig" alt="UBC!">		
 			<div>
 				<h2 class = "bolded">Honours Bachelor of Science, Biology (Animal Biology option)</h2>
 				<h3 class="subtitle">University of British Columbia || Vancouver, Canada</h3> 
@@ -291,21 +299,41 @@
 							</p>
 						</div>
 					</div>
-					<!-- SELECTED COURSEWORK AND SKILLS OBTAINED -->
-					<span class="bullet">Skills Obtained/Selected Coursework:</span>
-					<span class="squarebullet">BIOL404: Designing <span class = "accent">ecological surveys/transects/experiments</span>, statistically analyzing results, and communicating conclusions.</span>
-					<span class="squarebullet">BIOL427: Quickly acquiring a <span class = "accent">working knowledge of various British Columbian birds</span> and recognizing species based off of appearance and/or sound.</span>
-					<span class="squarebullet">BIOL363: Collecting (e.g. dissecting speciments) and analyzing data in a <span class = "accent">wet laboratory setting</span>.</span>
+					<span class="bullet">Demonstrated Skills:</span>
+				<!-- SELECTED COURSEWORK AND SKILLS OBTAINED -->
+					<span class="squarebullet">Statistically analyzing results and communicating conclusions via oral presentations and reports.</span>
+					<span class="squarebullet">Designing ecological surveys, transects, and experiments, selecting appropriate methodologies.</span>
+					<span class="squarebullet">Quickly acquiring a working knowledge of various British Columbian birds and recognizing species based off of sightings and calls.</span>
+					<span class="squarebullet">Collecting ecological data in a field setting even during rough weather conditions, requiring adequate teamwork skills in order to efficiently complete surveys.</span>
+					<span class="squarebullet">Collecting (e.g. dissecting specimens) and analyzing data in a wet laboratory setting.</span>
 				<!-- SELECTED ASSIGNMENTS -->
 					<span class="bullet">Selected Assignments:</span>
 					<span class="squarebullet">BIOL456: Outside JEB Article - How Light and Different Bedtimes May Affect Your Sleep <a href="/documents/BIOL456_Outside_JEB_Article_Paul_Chiu_28624112.pdf">(DOWNLOAD PDF)</a></span>
 					<span class="squarebullet">BIOL413: The Phylogeny and Biogeographic History of the Tribe Alcini <a href="/documents/BIOL413_Term_Paper_Paul_Chiu_28624112.pdf">(DOWNLOAD PDF)</a></span>
+				<!-- HKU -->
+					<br>
+					<div class = "clearfix float-my-children">
+						<img src="/images/hkulogo.PNG" class="circleimagesmall" alt="HKU!">
+						<span class="left-aligned selectedtext">
+							<span>
+								<div style = "width:215%">During a summer break (June - July 2015), I was at <div style = "color:#1e90ff;
+			font-weight:bold">the University of Hong Kong’s School of Biomedical Sciences</div> as an intern in a wet laboratory examining intervertebral disc degeneration in mice. There I assisted researchers with…</div>
+							</span>
+						</span>
+					</div>
+					<span class="squarebullet">Polymerase chain reactions (PCR), preparing master mixes and operating the PCR apparatus;</span>
+					<span class="squarebullet">Sectioning paraffin-wax-embedded samples, dewaxing them, and mounting them to slides;</span>
+					<span class="squarebullet">Staining samples of intervertebral discs with several chemicals to highlight the disc’s components; </span>
+					<span class="squarebullet">Immunostaining samples (with chromogens or fluorescently);</span>
+					<span class="squarebullet">Isolating DNA, requiring pipetting skills; </span>
+					<span class="squarebullet">Creating gels (e.g. agarose-based ones) for experiments; and</span>
+					<span class="squarebullet">Mixing chemicals to prepare reagents for experiments.</span>
 				</p>	
 			</div>
 		</p>
 		<!-- UTP -->
 		<div class="clearfix float-my-children">
-			<img src="/images/utplogo.png" class="circleimagebig">		
+			<img src="/images/utplogo.png" class="circleimagebig" alt="UTP!">		
 			<div>
 				<h2 class = "bolded">Dogwood Diploma</h2>
 				<h3 class="subtitle">University Hill Secondary School || Vancouver, Canada</h3> 
@@ -316,66 +344,65 @@
 			<div class="text">
 				<p>
 					<span class="bullet">University Transition Program: One of twenty students accepted into the school’s two-year intensive program, allowing for an early entrance into a Bachelor’s degree at the age of 14.</span>
-					<span class="bullet">Provincial Scholarship Award (2014): Obtained a top 5000 score in the 2013 province-wide standardized test.</span>
+					<span class="bullet">Provincial Scholarship Award (2014): Obtained a top 5000 score <span id="Volunteering_Experience">in the 2013 province-wide standardized test.</span></span>
 				</p>	
 			</div>
 		</p>
 	</div>
-<!-- SELECTED EXPERIENCES -->
+<!-- Volunteering Experience -->
 <br>
 	<div class="experiences">
 		<div class="selectedexperiences paddingspace"> 
-			<h1 class="headertext" id="Selected_Experiences">Selected Experiences</h1>
+			<h1 class="headertext">Volunteering Experience</h1>
 			<!-- SPES -->
 			<div class="clearfix float-my-children">
-   				<img src="/images/SPES%20logo.jpg" class="circleimagebig">		
+   				<img src="/images/SPES%20logo.jpg" class="circleimagebig" title="my workspace was right next to a window. when the bar/grill underneath put out all the tables for the summer, it smelled really really really good" alt="SPES!">		
 				<div>
 					<h2 class = "bolded">Stanley Park Ecology Society</h2>
-					<h3 class="subtitle">Volunteer || Vancouver, Canada</h3> 
+					<h3 class="subtitle">Vancouver, Canada</h3> 
 					<h3 class="subtitle">October 2016 - Present</h3>
 				</div>
 			</div>
 			<p class="left-aligned">
 				<div class="text">
       				<p>
-						<span class="bullet">The Stanley Park Ecology Society (SPES) is the non-profit organization treated as the de facto stewards of the flora and fauna of Vancouver’s world-famous Stanley Park. Upon the completion of my Honours thesis for which I collaborated with SPES, I was invited back to volunteer with them. </span>					
+						<span class="bullet">Stanley Park is <span class="accent">one of Canada’s most popular protected areas</span>, being a National Historic Site that is visited by over 8 million people annually. The Park is also of <span class="accent">high conservation importance</span>. Over 230 species of birds (including several endangered and/or migratory species) are observed each year thanks to its location along the Pacific Flyway (traversed by millions of migrants between Alaska and the southernmost tip of South America). The Park and its surrounding waters are <span class="accent">Important Bird Areas</span> (decided by BirdLife International).</span>
+						<span class="bullet">The Stanley Park Ecology Society (SPES) is a non-profit organization and is the <span class="accent">de facto steward of Stanley Park’s biodiversity</span>. They <span class="accent">teach the public about the Park’s flora and fauna</span>, on top of <span class="accent">providing data and recommendations to inform management decisions</span> by the Park’s governing body (the Vancouver Park Board)</span>
+						<span class="bullet">Upon the completion of my Honours thesis for which I collaborated with SPES, I was invited back to volunteer with them. My work at SPES would have <span class="accent">augmented their conservation management and education efforts</span>.</span>
 						<span class="bullet">Achievements:</span>
-						<span class="squarebullet">Compiled and <span class = "accent">conducted the largest ever analysis of SPES’ collected data</span> in order to <span class = "accent">identify any underlying temporal trends in Stanley Park’s bird populations</span>.</span>
+						<span class="squarebullet">Compiled and conducted the largest ever analysis of SPES’ collected data in order to identify any underlying temporal trends in Stanley Park’s bird populations. Trends pertaining to the Park’s threatened/endangered and migratory species were highlighted.</span>
 						<span class="circbullet">Check out a sample of some of my results <a href="/documents/2018_bird_update_Paul_Chiu_sample.pdf" target="_blank">(DOWNLOAD PDF)</a></span>
-						<span class="squarebullet"><span class = "accent">Communicated the results</span> of the bird population analyses <span class = "accent">via a presentation to SPES’ supporters and a draft report</span> to better inform the organization’s conservation managers.</span>
+						<span class="squarebullet">Communicated the results of the bird population analyses via a presentation to SPES’ supporters and as well as a draft chapter about birds in a major SPES conservation report.</span>
 						<span class="circbullet">Check out my Breakfast with the Birds presentation to SPES' supporters <a href="/documents/Paul_Chiu_Breakfast_with_Birds.pptx" target="_blank">(DOWNLOAD PPTX)</a></span> 
-						<span class="squarebullet"><span class = "accent">Conducted research from both academic and grey literature</span> into various topics in order to assist SPES’ conservation managers in their reports.</span>
-						<span class="squarebullet"><span class = "accent">Updated a life-list</span> containing all species that have ever been recorded in Stanley Park, <span class = "accent">compiling 1552 animals and plants</span>, including subspecies.</span>
-						<span class="circbullet">Check out the life-list <a href="/documents/Stanley_Park_Updated_Lifelist.xlsx" target="_blank">(DOWNLOAD XLSX)</a></span>
+						<span class="squarebullet">Gathered research from both academic and government literature/data into various topics to assist SPES’ conservation managers in their reports (and, in turn, the Vancouver Park Board’s management).</span>
+						<span class="squarebullet">Updated an accurate list of all species that have ever been recorded in Stanley Park — 1552 animals and plants, including subspecies — adding in dozens of entries absent in past versions of the list.</span>
+						<span class="circbullet">Check out the list <a href="/documents/Stanley_Park_Updated_Lifelist.xlsx" target="_blank">(DOWNLOAD XLSX)</a></span>
+						<span class="squarebullet">Assisted in surveying animals (including threatened swallows and great blue herons) and other day-to-day conservation tasks (e.g. maintaining nest boxes for the aforementioned swallows).</span>
 					</p>
 				</div>
 			</p>
-			<!-- PAYLESS -->
+			<!-- WILDRESEARCH -->
 			<div class="clearfix float-my-children">
-   				<img src="/images/payless.jpg" class="circleimagebig">		
+   				<img src="/images/wildresearchlogo.jpg" class="circleimagebig" title="the observatory was right next to a waste treatment plant, but it didn't really smell that bad" alt="WildResearch!">		
 				<div>
-					<h2 class = "bolded">Payless ShoeSource</h2>
-					<h3 class="subtitle">Sales Associate || Richmond, Canada</h3> 
-					<h3 class="subtitle">March 2018 - June 2018</h3>
+				<h2 class = "bolded">WildResearch</h2>
+				<h3 class="subtitle">Richmond, Canada</h3> 
+				<h3 class="subtitle">August 26, August 28, & September 25, 2016</h3>
 				</div>
 			</div>
 			<p class="left-aligned">
 				<div class="text">
-      				<p>
-						<span class="bullet">Payless ShoeSource Inc. is multi-national American chain store selling discount footwear to women, men, and children. I worked at a store located in the largest and busiest store of my hometown (and 10th busiest of Canada).</span>
-						<span class="bullet">Achievements:</span>
-						<span class="squarebullet"><span class = "accent">Increased proficiency in conversational skills</span> in order to hold positive interactions with customers, even if said customers are unfriendly/hostile.</span>
-						<span class="squarebullet"><span class = "accent">Developed teamwork skills</span> in order for the whole staff to efficiently complete long tasks (e.g. doing inventory and restocking products).</span>
-						<span class="squarebullet">Became adapted to <span class = "accent">working under a heavy time pressure</span> (e.g. during peak periods of business).</span>
-					</p>
-				</div>
+					<span class="bullet">WildResearch operates the Iona Island Bird Observatory, situated in the Iona Beach Regional Park. The park is classified as an Important Bird Area as many migratory birds utilize its riparian habitats, leading to WildResearch setting up monitoring programs every migratory season to monitor the birds’ population trends.</span>
+					<span class="bullet">Tasks:</span>
+					<span class="squarebullet">Mist-netted, banded, and identified common British Columbian migratory bird species.</span>
+      			</div>
 			</p>
 			<!-- RAPS -->
 			<div class="clearfix float-my-children">
-   				<img src="/images/raps%20logo%20resized.jpg" class="circleimagebig">		
+   				<img src="/images/raps%20logo%20resized.jpg" class="circleimagebig" title="when i was doing laundry, i hung out with a cat called Cinder. they said he was super feisty, but we were always tight. i miss him" alt="RAPS!">		
 				<div>
 				<h2 class = "bolded">Regional Animal Protection Society</h2>
-				<h3 class="subtitle">Volunteer || Richmond, Canada</h3> 
+				<h3 class="subtitle">Richmond, Canada</h3> 
 				<h3 class="subtitle">January 2015 - June 2018</h3>
 				</div>
 			</div>
@@ -389,10 +416,10 @@
 			</p>
 			<!-- OWL -->
 			<div class="clearfix float-my-children">
-   				<img src="/images/owllogo.jpg" class="circleimagebig">		
+   				<img src="/images/owllogo.jpg" class="circleimagebig" title="quick shoutouts to Sarah the barn owl for starting off the chain of events that got me here" alt="OWL!">		
 				<div>
 				<h2 class = "bolded">Orphaned Wildlife Rehabilitation Society</h2>
-				<h3 class="subtitle">Volunteer || Delta, Canada</h3> 
+				<h3 class="subtitle">Delta, Canada</h3> 
 				<h3 class="subtitle">October 2010 - June 2013</h3>
 				</div>
 			</div>
@@ -404,61 +431,74 @@
 					<span class="squarebullet">Other general day-to-day tasks: cleaning, laundry</span>
 				</div>
 			</p>
+		<!-- OTHER EXPERIENCES -->
+			<div>
+				<h2 class="headertext">Other Experiences</h2>
+		<!-- VET CLINIC -->
+			<div class = "clearfix float-my-children">
+   				<img src="/images/mojo%20resized.jpg" class="circleimagesmall" title="so many puppers and kitties it was my favourite place" alt="Mojo the Pomeranian!">
+				<span class="left-aligned selectedtext">
+					<div class = "othervolunteerexperiences">
+					<h3 class = "bolded">Cambie Animal Hospital </h3>
+					<h4 class="subtitle">Vancouver, Canada</h4>
+					<h4 class="subtitle">October 2016 - November 2017</h4>
+					</div>
+				</span>
+			</div>
+			<p class="left-aligned">
+				<div class="text">
+					<span class="bullet">Assisted with handling common pets visiting the veterinarians.</span>
+				</div>
+			</p>
+		<!-- FESTIVALS AND CONVENTIONS -->
+			<div class = "clearfix float-my-children"> 
+   				<img src="/images/carfreelogo.PNG" class="circleimagesmall"  title="i would be really happy if i could volunteer at a convention every month" alt="Car Free Day Vancouver!">
+				<span class="left-aligned selectedtext">
+					<div class = "othervolunteerexperiences">
+					<h3 class = "bolded">Various Festivals and Conventions </h3>
+					<h4 class="subtitle">Various Locations</h4>
+					<h4 class="subtitle">Various Time Periods</h4>
+					</div>
+				</span>
+			</div>
+			<p class="left-aligned">
+				<div class="text">
+					<span class="bullet">Established friendly relationships with visitors in order to maintain their positive opinions of the festival/convention.</span>
+					<span class="bullet">I've volunteered at...</span>
+					<div style = "width:140%" id="Work_Experience">
+						<span class="squarebullet">Car Free Day Vancouver || Vancouver, Canada || June 18 & July 9, 2017</span>
+						<span class="squarebullet">VancouFur || Richmond, Canada || March 10 - 11, 2018</span>
+						<span class="squarebullet">Oz Comic-Con Brisbane || Brisbane, Canada || September 22 - 23, 2018</span>
+					</div>
+				</div>
+			</p>
+			</div>
 		</div>
-<!-- OTHER EXPERIENCES -->
+<!-- WORK EXPERIENCE FKA OTHER EXPERIENCES -->
 <br>
-		<div class="otherexperiences paddingspace"> 
-			<h2 class="headertext" id="Other_Experiences">Other Experiences</h2>
-			<!-- WILDRESEARCH -->
-			<br>
-			<h3 class = "sameline bolded">WildResearch (Iona Island Bird Observatory) </h3>
-			<h4 class = "sameline subtitle">|| Richmond, Canada || August 26, August 28, September 25, 2016</h4>
+		<div class="experiences">
+			<div class="selectedexperiences paddingspace">
+			<h1 class="headertext">Work Experience</h1>
+			<!-- PAYLESS -->
 			<div class="clearfix float-my-children">
-   				<img src="/images/wildresearchlogo.jpg" class="circleimagesmall">
-				<span class="left-aligned selectedtext">
-					<span>
-						<p class="bullet">Mist-netted, banded, and identified common British Columbian migratory bird species.</p>
-					</span>
-				</span>
+   				<img src="/images/payless.jpg" class="circleimagebig" title="the managers gave me a lot of stickers to give to everybody it was a great place to work" alt="Payless Shoes!">		
+				<div>
+					<h2 class = "bolded">Payless ShoeSource</h2>
+					<h3 class="subtitle">Sales Associate || Richmond, Canada</h3> 
+					<h3 class="subtitle">March 2018 - June 2018</h3>
+				</div>
 			</div>
-			<!-- HKU -->
-			<br>
-			<h3 class = "sameline bolded">University of Hong Kong (School of Biomedical Sciences) </h3>
-			<h4 class = "sameline subtitle">|| Hong Kong, Hong Kong || June 2015 - July 2015</h4>
-			<div class = "clearfix float-my-children">
-   				<img src="/images/hkulogo.PNG" class="circleimagesmall">
-				<span class="left-aligned selectedtext">
-					<span>
-						<p class="bullet">Assisted with performing tasks (e.g. pipetting, PCR, clean-up) in a wet laboratory setting.</p>
-					</span>
-				</span>
-			</div>
-			<!-- FESTIVALS AND CONVENTIONS -->
-			<br>
-			<h3 class = "selectedpadding bolded">Various festivals and conventions</h3>
-			<div class = "clearfix float-my-children">
-   				<img src="/images/carfreelogo.PNG" class="circleimagesmall">
-				<span class="left-aligned selectedtext">
-					<span>
-						<p class="bullet selectedpadding">Established friendly relationships with visitors in order to maintain their positive opinions of the festival/convention.</p>
-					</span>
-				</span>
-			</div>
-			<br>
-			<h4 class = "subtitle selectedpadding">Car Free Day Vancouver || June 18 & July 9, 2017</h4> 
-			<h4 class = "subtitle selectedpadding">VancouFur || March 10-11, 2018</h4>
-			<h4 class = "subtitle selectedpadding">Oz Comic-Con Brisbane || September 22-23, 2018</h4>
-			<!-- VET CLINIC -->
-			<br>
-			<h3 class = "sameline bolded">Cambie Animal Hospital </h3>
-			<h4 class="sameline subtitle">|| Vancouver, Canada || October 2016 - November 2017</h4>
-			<div class = "clearfix float-my-children">
-   				<img src="/images/mojo%20resized.jpg" class="circleimagesmall">
-				<span class="left-aligned selectedtext">
-					<span>
-						<p class="bullet">Assisted with handling common pets visiting the veterinarians.</p>
-					</span>
-				</span>
+			<p class="left-aligned">
+				<div class="text">
+      				<p>
+						<span class="bullet">Payless ShoeSource Inc. is multi-national American chain store selling discount footwear to women, men, and children. I worked at a store located in the largest and busiest store of my hometown (and 10th busiest of Canada).</span>
+						<span class="bullet">Achievements:</span>
+						<span class="squarebullet">Increased proficiency in conversational skills in order to hold positive interactions with customers, even if said customers are unfriendly/hostile.</span>
+						<span class="squarebullet">Developed teamwork skills in order for the whole staff to efficiently complete long tasks (e.g. doing inventory and restocking products).</span>
+						<span class="squarebullet">Became adapted to working under a heavy time pressure (e.g. during peak periods of business).</span>
+					</p>
+				</div>
+			</p>
 			</div>
 		</div>
 	</div>
@@ -470,9 +510,9 @@
 		<p class = "selectedpadding"><span class = "accent">Languages I can communicate in</span>: English, French, Cantonese</p>
 		<p class = "selectedpadding"><span class = "accent">Software I'm familiar with</span>: RStudio, ArcGIS, Audacity, paint.NET</p>
 		<p class = "selectedpadding"><span class = "accent">Favourite animals</span>: burrowing owls, Steller's jays, leopard cats </p>
-		<p class = "selectedpadding"><span class = "accent">Favourite musicians</span>: <a href="https://www.youtube.com/watch?v=rZHPCcFmEjc">Alvvays</a>, <a href="https://www.youtube.com/watch?v=Y7y0iEQ_4iE">Ryan</a><a href="https://www.youtube.com/watch?v=95eAZLXa2yA"> Hemsworth</a>, <a href="https://www.youtube.com/watch?v=szeXkBYq5HU">Beach<a href="https://www.youtube.com/watch?v=dc6SSu5pnHw"> Bunny</a>, <a href="https://www.youtube.com/watch?v=BmCZ-NxESOc">The</a><a href="https://www.youtube.com/watch?v=iVImwSb4EYU"> Beths</a>, <a href="https://www.youtube.com/watch?v=jQlA5t4P8Z4">Kero</a><a href="https://www.youtube.com/watch?v=rY-FJvRqK0E"> Kero</a><a href="https://www.youtube.com/watch?v=sepcj45774I"> Bonito</a>
+		<p class = "selectedpadding"><span class = "accent">Favourite musicians</span>: <a href="https://www.youtube.com/watch?v=rZHPCcFmEjc">Alvvays</a>, <a href="https://www.youtube.com/watch?v=Y7y0iEQ_4iE">Ryan</a><a href="https://www.youtube.com/watch?v=95eAZLXa2yA"> Hemsworth</a>, <a href="https://www.youtube.com/watch?v=szeXkBYq5HU">Beach<a href="https://www.youtube.com/watch?v=dc6SSu5pnHw"> </a><a href="https://www.youtube.com/watch?v=blkBjIGL5RA">Bunny</a>, <a href="https://www.youtube.com/watch?v=BmCZ-NxESOc">The</a><a href="https://www.youtube.com/watch?v=iVImwSb4EYU"> Beths</a>, <a href="https://www.youtube.com/watch?v=jQlA5t4P8Z4">Kero</a><a href="https://www.youtube.com/watch?v=rY-FJvRqK0E"> Kero</a><a href="https://www.youtube.com/watch?v=sepcj45774I"> Bonito</a>
 		<p class = "selectedpadding"><span class = "accent">Favourite food</span>: yam tempura sushi rolls</p>
-		<p class = "selectedpadding"><span class = "accent">Favourite movie</span>: Rush Hour 2</p>
+		<p class = "selectedpadding"><span class = "accent">Favourite movie</span>: Rush Hour 2 or Paddington 2</p>
 		<p class = "selectedpadding"><span class = "accent">Favourite book</span>: any Sherlock Holmes collection</p>
 		
 	</div>
@@ -506,6 +546,8 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
 </script>
 </body>
 </html>
