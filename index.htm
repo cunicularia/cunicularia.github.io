@@ -547,7 +547,11 @@ window.onclick = function(event) {
   }
 }
 
-
+// Have all links to external documents open in a new tab
+var linkList = document.querySelectorAll('#link_other a');
+for(var i in linkList){
+ linkList[i].setAttribute('target', '_blank');
+}
 </script>
 </body>
 </html>
