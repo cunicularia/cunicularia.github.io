@@ -1,10 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
 	<title>Paul V. Chiu</title>
 	
 	<style>
+	/* General Formatting */
 		html, body {
 			margin: 0;
 			padding: 0;
@@ -26,7 +27,7 @@
 		}
 		.center {
 			display: block;
-   			 margin-left: auto;
+   			margin-left: auto;
 			margin-right: auto;
 			width: 50%;
 		}
@@ -110,6 +111,7 @@
 		}
 		.text {
 			width:50%;
+			min-width:500px;
 			margin-left:1%;
 		}
 		#profilepic {
@@ -120,7 +122,8 @@
 			color: 	#000099;
 			text-align: center;
 		}
-		/* https://stackoverflow.com/questions/32039846/can-i-use-css-to-add-a-bullet-point-to-any-element */
+		
+	/* https://stackoverflow.com/questions/32039846/can-i-use-css-to-add-a-bullet-point-to-any-element */
 		.bullet {
   			display: list-item;          /* This has to be "list-item"                                               */
     			list-style-type: disc;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
@@ -138,7 +141,8 @@
     			list-style-position: outside; /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position */
 			margin-left:12%;
 		}
-		/*I took clearfix (the next lines) from https://stackoverflow.com/questions/11438910/how-to-display-items-side-by-side-without-using-tables */
+		
+	/*I took clearfix (the next lines) from https://stackoverflow.com/questions/11438910/how-to-display-items-side-by-side-without-using-tables */
 		/* tell the container's children to float left: */
 			.float-my-children > * {
     			float:left;
@@ -156,8 +160,8 @@
 			.clearfix:after {
    				clear: both;
 			}
-		/* end clearfix*/
-		/* navbar stuff I took from w3schools */
+		
+	/* navbar stuff I took from w3schools */
 		#navbar_ul {
 			list-style-type: none;
    			margin: 0;
@@ -182,44 +186,45 @@
 		.navbar_a:hover {
 			background-color: #111;
 		}		
+		
 	/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
+		.modal {
+		  display: none; /* Hidden by default */
+		  position: fixed; /* Stay in place */
+		  z-index: 1; /* Sit on top */
+		  padding-top: 100px; /* Location of the box */
+		  left: 0;
+		  top: 0;
+		  width: 100%; /* Full width */
+		  height: 100%; /* Full height */
+		  overflow: auto; /* Enable scroll if needed */
+		  background-color: rgb(0,0,0); /* Fallback color */
+		  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
 
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
+		/* Modal Content */
+		.modal-content {
+		  background-color: #fefefe;
+		  margin: auto;
+		  padding: 20px;
+		  border: 1px solid #888;
+		  width: 80%;
+		}
 
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
+		/* The Close Button */
+		.close {
+		  color: #aaaaaa;
+		  float: right;
+		  font-size: 28px;
+		  font-weight: bold;
+		}
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}	
+		.close:hover,
+		.close:focus {
+		  color: #000;
+		  text-decoration: none;
+		  cursor: pointer;
+		}	
 	</style>
 </head>
 
@@ -237,22 +242,102 @@
 <!-- PROFILE -->
 	<div class="clearfix float-my-children center cover">
    		<img src="/images/linkedinpic1.PNG" style="width:212px; height:214px; border-radius:50%; padding-left:3px;padding-top:3px" title="Hi!!!" alt="it's me">
-  		<p class= "headerinfotext"><strong>Paul V. Chiu</strong> <br> <span style="font-size: 70%">Honours BSc. Biology</span> <br> <span style="font-size: 60%">Richmond, Canada</span> <br> <span style="font-size: 60%">paulvchiu@gmail.com</span></p>		 
+  		<p class= "headerinfotext">
+			<strong>Paul V. Chiu</strong>
+			<br>
+			<span style="font-size: 70%">Honours BSc. Biology</span>
+			<br>
+			<span style="font-size: 70%">MConsSci.</span>
+			<br>
+			<span style="font-size: 60%">Richmond, Canada</span>
+			<br>
+			<span style="font-size: 60%">paulvchiu@gmail.com</span>
+		</p>		 
 	</div>
 	<div class="left-aligned linespaced">
-		<p>Hi! I am a <span class = "bolded">Masters of Conservation Science graduate </span> from the University of Queensland. Having loved birds (especially owls) ever since I was a kid, I initially wished to examine avian behaviour. As such, during my bachelor’s degree, I focused my <span class = "bolded">education on ecological research and animal psychology along with the associated statistical analysis skills</span>. After graduating, I volunteered with the stewards of the local Stanley Park — Stanley Park Ecology Society — where my <span class = "bolded">work assisted with bird conservation and management in one of Canada’s most-visited protected site</span>. Seeing the direct effect I had on helping preserve the Park’s biodiversity, I was inspired to undertake a career in conservation and headed all the way from Canada to the University of Queensland. Now, I want to give back to the community by <span class = "bolded">working in conservation education and/or in a citizen science position</span>, especially with the society's focus on these topics. While I already have handy <span class = "bolded">data analysis (including knowledge of R) and communication skills</span>, I am <span class = "bolded">always interested in improving my abilities</span> to develop my career even further.</p>
-		<p > If you’re interested in talking with me about conservation, birds, or anything else, you can definitely <a href="mailto:paulvchiu@gmail.com?Subject=Hello!" target="_top">shoot me an email</a> or <a href="https://www.linkedin.com/in/paul-chiu-94ba36a1/">connect with me on LinkedIn</a>. If you want to know more about the Stanley Park Ecology Society and a few of my other experiences, <span id="Academic_Experience">keep on scrolling.</span></p>
+		<p> Hello, I’m Paul! While I’m currently pursuing a
+			<span class="bolded">Master of Education</span> 
+			graduate degree from the University of Ottawa, 
+			my home field is in 
+			<span class="bolded">biodiversity conservation</span> 
+			, having received a 
+			<span class="bolded">Master of Conservation Science</span> 
+			degree from the University of Queensland and an 
+			<span class="bolded">Honour’s Bachelor’s of Science specializing in Animal Biology</span> 
+			from the University of British Columbia.
+		</p>
+		<p>
+			While the early phases of my education were focused on 
+			<span class="bolded">avian ecology</span> 
+			, I’ve transferred my love for birds (especially owls) into a career in 
+			<span class="bolded">biodiversity conservation</span>
+			, with a big inspiration for this move being the time I spent (and am currently still spending) interning with a local conservation organization 
+			— Stanley Park Ecology Society (SPES). 
+			With SPES, I’m able to assist with the 
+			<span class="bolded">management of the flora and fauna living in Vancouver’s Stanley Park</span>
+			— one of Canada’s most-popular protected sites (and one I’m privileged to live close to). 
+			You can check out some of the projects I’ve done for them below!
+		</p>
+		<p>
+			With that being said, 
+			my experiences with SPES made me realize that there’s more to conservation than just heading out to the field and conducting experiments (even if it is fun to do) 
+			— us conservationists also need to 
+			<span class="bolded">talk with and make connections to members of the public in order to promote our field and try to get everybody living a bit more sustainably.</span> 
+		</p>
+		<p>
+			Accordingly, my academic focus has now shifted to 
+			<span class="bolded">conservation science education and communication</span>
+			, with my Master’s project at the University of Queensland focused on 
+			<span class="bolded">interpretive signage as a medium for promoting sustainable behaviours</span>
+			and my current Master’s project at the University of Ottawa investigating the 
+			<span class="bolded">reflections of undergraduate science students who had participated in an in-class activity during which they debated one another on science-related issues</span>
+			, with the kicker being that they had no idea which side they were going to be arguing for until right before the debate started. 
+		</p>
+		<p>Anyways, if you’re interested in talking with me about science communication, conservation, birds, or anything else, 
+			you can definitely <a href="mailto:paulvchiu@gmail.com?Subject=Hello!" target="_top">shoot me an email</a> 
+			or <a href="https://www.linkedin.com/in/paul-chiu-94ba36a1/">connect with me on LinkedIn</a>. 
+			If you want to know more about the Stanley Park Ecology Society and a few of my other experiences, 
+			<span id="Academic_Experience">keep on scrolling.</span>
+		</p>
 	</div>
 <!-- EDUCATION -->
 	<div class="academics paddingspace">
 		<h1 class="headertext">Academic Experience</h1>
+		<!-- uOttawa -->
+		<div class="clearfix float-my-children">
+			<img src="/images/uottawalogo.png" class="circleimagebig" alt="uOttawa!">		
+			<div>
+				<h2 class = "bolded">Master of Education</h2>
+				<h3 class="subtitle">University of Ottawa || Ottawa, Canada</h3> 
+				<h3 class="subtitle">January 2021 - Present</h3>
+			</div>
+		</div>
+		<p class="left-aligned">
+			<div class="text">
+				<p>
+					<!-- SELECTED COURSEWORK AND SKILLS OBTAINED -->
+					<span class="bullet">Demonstrated Skills:</span>
+					<span class="squarebullet">Drawing on a sense of critical thinking and understanding reflection 
+						in order to develop commentary on pre-existing paradigms and theories — both personal and academic — 
+						about teaching and communicating as well as the STSE (Science, Technology, Society, and Environment) movement in science education.
+					</span>
+					<span class="squarebullet">Relaying the aforementioned commentary in a variety of media — from essays and reports to posters and videos.</span>
+					<span class="squarebullet">Create a comprehensive plan for an educational program, including a structured needs assignment and a methodology for evaluating the program.</span>
+					<!-- SELECTED ASSIGNMENTS -->
+					<span class="bullet">Selected Assignments:</span>
+					<span class="squarebullet">EDU5101: Subverting Allonormativity: Using Queer Ecology and Queer Pedagogy at Zoos and Other Sites <a href="/documents/EDU5101_Final_Research_Paper_Paul_Chiu.pdf">(DOWNLOAD PDF)</a></span>
+					<span class="squarebullet">EDU5210: Reflection on John Dewey's <i>Experience and Education</i> <a href="/documents/EDU5210_Reflection_Paper_Paul_Chiu.pdf">(DOWNLOAD PDF)</a></span>
+					<span class="squarebullet">EDU5206: Full Project Plan <a href="/documents/EDU5206_Full_Project_Plan.pdf">(DOWNLOAD PDF)</a></span>
+				</p>		
+				</div>
+		</p>
 		<!-- UQ -->
 		<div class="clearfix float-my-children">
 			<img src="/images/uqlogo.jpg" class="circleimagebig" alt="UQ!">		
 			<div>
 				<h2 class = "bolded">Master of Conservation Science</h2>
 				<h3 class="subtitle">University of Queensland || Brisbane, Queensland</h3> 
-				<h3 class="subtitle">June 2018 - December 2019 (Expected completion date: December 2019)</h3>
+				<h3 class="subtitle">June 2018 - December 2019</h3>
 			</div>
 		</div>
 		<p class="left-aligned">
@@ -396,7 +481,13 @@
 						<span class="squarebullet">As a roving guide, provided nature interpretation around and general information about Stanley Park to visitors.</span>
 						<span class="squarebullet">Operated interactive display stations themed around herons, wetlands, or intertidal zones.</span>
 						<span class="squarebullet">Provided administrative and logistics support for the operations of SPES’ School Programs department, encompassing day camps, seminars, and training sessions.  </span>
+						<span class="squarebullet">Troubleshot issues with Microsoft Access'automated emailing and database querying features.</span>
+						<span class="squarebullet">Assisted with posting SPES events on EventBrite, Craiglist, and other virtual bulletins.</span>
+						<span class="squarebullet">Used Adobe InDesign and Canva to design promotional posters advertising SPES' programs.</span>
+						<span class="squarebullet">Acted as a volunteer webmaster assisting staff with troubleshooting issues on SPES' WordPress website.</span>
 						<span class="bullet">Achievements & duties as assistant to the Conservation Projects Manager:</span>
+						<span class="squarebullet">Used R Shiny Leaflet to update the map SPES uses to track reported coyote incidents.</span>
+						<span class="circbullet"><a href="https://stanleyparkecology.shinyapps.io/coyote_sightings_map/" target="_blank">Check out the map!</a></span>
 						<span class="squarebullet">Compiled a list of all species that have ever been recorded in Stanley Park and coded an interactive educational website with R Shiny for the public to access said list.</span>
 						<span class="circbullet"><a href="https://stanleyparkecology.shinyapps.io/life_list/" target="_blank">Check out the list!</a></span>
 						<span class="squarebullet">Conducted one of the largest analyses of SPES’ collected data (with RStudio and Microsoft Excel) in order to identify any underlying temporal trends in Stanley Park’s bird populations. Trends pertaining to the Park’s threatened/endangered and migratory species were highlighted.</span>
@@ -551,20 +642,6 @@
 			</p>
 			</div>
 		</div>
-	</div>
-<!-- MORE ABOUT ME -->
-<br>
-	<div class = "more_about_me paddingspace">
-		<h2 class="headertext" id="More_About_Me">More About Me</h2>
-		<p class = "selectedpadding"><span class = "accent">Hometown</span>: Richmond, British Columbia, Canada</p>
-		<p class = "selectedpadding"><span class = "accent">Languages I can communicate in</span>: English, French, Cantonese</p>
-		<p class = "selectedpadding"><span class = "accent">Software I'm familiar with</span>: RStudio, ArcGIS, Marxan, Audacity, paint.NET</p>
-		<p class = "selectedpadding"><span class = "accent">Favourite animals</span>: burrowing owls, Steller's jays, leopard cats </p>
-		<p class = "selectedpadding"><span class = "accent">Favourite musicians</span>: <a href="https://www.youtube.com/watch?v=Y7y0iEQ_4iE">Ryan</a><a href="https://www.youtube.com/watch?v=95eAZLXa2yA"> Hemsworth</a>, <a href="https://www.youtube.com/watch?v=szeXkBYq5HU">Beach<a href="https://www.youtube.com/watch?v=dc6SSu5pnHw"> </a><a href="https://www.youtube.com/watch?v=blkBjIGL5RA">Bunny</a>, <a href="https://www.youtube.com/watch?v=BmCZ-NxESOc">The</a><a href="https://www.youtube.com/watch?v=iVImwSb4EYU"> Beths</a>, <a href="https://www.youtube.com/watch?v=jQlA5t4P8Z4">Kero</a><a href="https://www.youtube.com/watch?v=rY-FJvRqK0E"> Kero</a><a href="https://www.youtube.com/watch?v=sepcj45774I"> Bonito</a>
-		<p class = "selectedpadding"><span class = "accent">Favourite food</span>: yam tempura sushi rolls</p>
-		<p class = "selectedpadding"><span class = "accent">Favourite movie</span>: Rush Hour 2/Paddington 2</p>
-		<p class = "selectedpadding"><span class = "accent">Favourite book</span>: any Sherlock Holmes collection</p>
-		
 	</div>
 <p class = "selectedpadding">Website made by me, but with a lot of help from James Liu and Shikib Mehri <3</p>
 <br>
